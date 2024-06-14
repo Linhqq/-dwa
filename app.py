@@ -84,5 +84,9 @@ def handle_request():
     execution_time = end_time - start_time  # Calculate execution time
     result['execution_time'] = execution_time  # Add execution time to the result
     return jsonify(result)
+    
+@app.route('/')
+def huy():
+    return '<h1>Hi! You</h1>'
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=1117)
