@@ -3,6 +3,11 @@ from flask_cors import CORS
 from werkzeug.urls import url_quote
 import asyncio
 from aiohttp import ClientSession
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from werkzeug.urls import url_quote
+import asyncio
+from aiohttp import ClientSession
 import re
 import time
 
@@ -35,12 +40,8 @@ async def process_link(hwid):
             "referer": ""
         },
         {
-            "url": "https://flux.li/android/external/check1.php",
-            "referer": "https://linkvertise.com"
-        },
-        {
-            "url": "https://flux.li/android/external/main.php",
-            "referer": "https://linkvertise.com"
+            "url": "https://serahub.site/getkey",
+            "referer": "https://linkvertise.com
         }
     ]
     
@@ -83,10 +84,5 @@ def handle_request():
     execution_time = end_time - start_time  # Calculate execution time
     result['execution_time'] = execution_time  # Add execution time to the result
     return jsonify(result)
-
-@app.route('/')
-def huy():
-    return '<h1>Hi! You</h1>'
-
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=1117)
