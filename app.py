@@ -41,7 +41,7 @@ async def process_link(hwid):
         },
         {
             "url": "https://serahub.site/getkey",
-            "referer": "https://linkvertise.com
+            "referer": "https://linkvertise.com"
         }
     ]
     
