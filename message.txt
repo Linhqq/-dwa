@@ -31,7 +31,7 @@ async def fetch(session, url, referer):
 async def process_link(hwid):
     endpoints = [
         {
-            "url": f"https://flux.li/android/external/start.php?HWID={hwid}",
+            "url": f"https://serahub.site/getkey?token{hwid}",
             "referer": ""
         },
         {
